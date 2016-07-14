@@ -55,7 +55,7 @@ public class Solution
         {
             if  (isNumber(array[i]))
             {
-                
+
             }
         }
     }
