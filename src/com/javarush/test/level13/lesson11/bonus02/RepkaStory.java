@@ -1,4 +1,3 @@
-/*
 package com.javarush.test.level13.lesson11.bonus02;
 
 import java.util.List;
@@ -9,11 +8,14 @@ public class RepkaStory
 
         Person first;
         Person second;
-        for (int i = items.size(); i > 0; i--) {
+
+        System.out.println(items.size());
+        for (int i = items.size() - 1; i > 0; i--) {
+            System.out.println(i);
             first = items.get(i - 1);
             second = items.get(i);
             first.pull(second);
+
         }
     }
 }
-*/

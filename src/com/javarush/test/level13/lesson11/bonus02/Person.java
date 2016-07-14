@@ -10,20 +10,17 @@ public class Person implements RepkaItem
         this.name = name;
         this.namePadezh = namePadezh;
     }
-    public void  pull (String name, String namePadezh)
-    {
-        System.out.println( name+  " за" + namePadezh);
-    }
 
     @Override
     public String getNamePadezh()
     {
-        return namePadezh;
-
+      return namePadezh;
     }
 
-
-    public void pull(Person second,Person first)
+    public void pull(Person person)
     {
+        System.out.println(name + " за " + namePadezh);
     }
+
+
 }

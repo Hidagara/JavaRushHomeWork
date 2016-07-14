@@ -1,10 +1,8 @@
-/*
 package com.javarush.test.level13.lesson11.bonus02;
 
 import java.util.ArrayList;
 import java.util.List;
 
-*/
 /* Репка
 Сказка Репка:
 1. Реализовать интерфейс RepkaItem в классе Person.
@@ -13,8 +11,7 @@ import java.util.List;
 Дедка за Репку
 3. Исправить логическую ошибку цикла в методе tell класса RepkaStory.
 4. Выполнить метод main и наслаждаться сказкой!
-*//*
-
+*/
 
 public class Solution
 {
@@ -28,4 +25,3 @@ public class Solution
         RepkaStory.tell(plot);
     }
 }
-*/
