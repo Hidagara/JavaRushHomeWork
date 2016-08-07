@@ -17,8 +17,18 @@ public class Solution
     public static ArrayList<String>[] createList()
     {
         //напишите тут ваш код
+        ArrayList<String> a1 = new ArrayList<>();
+        a1.add("mda");
+        ArrayList<String> a2 = new ArrayList<>();
+        a2.add("topkek");
+        ArrayList<String> a3 = new ArrayList<>();
+        a3.add("votetokek");
+        ArrayList<String> [] list = new ArrayList[3];
+        list[0] = a1;
+        list[1] = a2;
+        list[2] = a3;
 
-        return null;
+        return list;
     }
 
     public static void printList(ArrayList<String>[] arrayOfStringList)

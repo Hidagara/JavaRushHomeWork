@@ -1,9 +1,11 @@
+/*
 package com.javarush.test.level09.lesson11.bonus03;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
+*/
 /* Задача по алгоритмам
 Задача: Пользователь вводит с клавиатуры список слов (и чисел). Слова вывести в возрастающем порядке, числа - в убывающем.
 Пример ввода:
@@ -24,7 +26,8 @@ import java.util.ArrayList;
 1
 0
 Яблоко
-*/
+*//*
+
 
 public class Solution
 {
@@ -51,12 +54,30 @@ public class Solution
     public static void sort(String[] array)
     {
         //напишите тут ваш код
-        for ( int i = 0; i < array.length-1; i++)
-        {
-            if  (isNumber(array[i]))
-            {
 
+        ArrayList<String> strList = new ArrayList<>();
+        ArrayList<Integer> intList = new ArrayList<>();
+
+        for ( String s : array             )
+        {
+            if (isNumber(s))
+            {
+                intList.add(Integer.valueOf(s));
             }
+            else
+               strList.add(s);
+        }
+
+
+
+
+
+
+        // return
+
+        for (int i = 0; i<= strList.size() && i <= intList.size(); i++)
+        {
+            array[i] =
         }
     }
 
@@ -71,6 +92,7 @@ public class Solution
     public static boolean isNumber(String s)
     {
         if (s.length() == 0) return false;
+
         char[] chars = s.toCharArray();
         for (int i = 0; i < chars.length; i++)
         {
@@ -84,3 +106,4 @@ public class Solution
         return true;
     }
 }
+*/
