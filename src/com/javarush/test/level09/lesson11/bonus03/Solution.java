@@ -1,11 +1,9 @@
-/*
 package com.javarush.test.level09.lesson11.bonus03;
 
 import java.io.BufferedReader;
 import java.io.InputStreamReader;
 import java.util.ArrayList;
 
-*/
 /* Задача по алгоритмам
 Задача: Пользователь вводит с клавиатуры список слов (и чисел). Слова вывести в возрастающем порядке, числа - в убывающем.
 Пример ввода:
@@ -26,8 +24,7 @@ import java.util.ArrayList;
 1
 0
 Яблоко
-*//*
-
+*/
 
 public class Solution
 {
@@ -55,30 +52,38 @@ public class Solution
     {
         //напишите тут ваш код
 
-        ArrayList<String> strList = new ArrayList<>();
-        ArrayList<Integer> intList = new ArrayList<>();
-
-        for ( String s : array             )
-        {
-            if (isNumber(s))
-            {
-                intList.add(Integer.valueOf(s));
+        for (int i = 0; i < array.length; i++) {
+            outer: for (int j = 0; j < array.length - 1;j++ ) {
+                if(isNumber(array[j])) {
+                    int k = j+1;
+                    while (!isNumber(array[k])) {
+                        k++;
+                        if (k >= array.length-1) {
+                            continue outer ;
+                        }
+                    }
+                    if (Integer.parseInt(array[k]) > Integer.parseInt(array[j])) {
+                        String temp = array[j];
+                        array[j] = array[k];
+                        array[k] = temp;
+                    }
+                } else {
+                    int k = j+1;
+                    while (isNumber(array[k])) {
+                        k++;
+                        if (k >= array.length-1) {
+                            continue outer ;
+                        }
+                    }
+                    if (isGreaterThan(array[j], array[k])) {
+                        String temp = array[j];
+                        array[j] = array[k];
+                        array[k] = temp;
+                    }
+                }
             }
-            else
-               strList.add(s);
         }
 
-
-
-
-
-
-        // return
-
-        for (int i = 0; i<= strList.size() && i <= intList.size(); i++)
-        {
-            array[i] =
-        }
     }
 
     //Метод для сравнения строк: 'а' больше чем 'b'
@@ -106,4 +111,3 @@ public class Solution
         return true;
     }
 }
-*/

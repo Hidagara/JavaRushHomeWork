@@ -42,18 +42,12 @@ public class Solution
 
 
         //напишите тут ваш код
-        int count = 0;
+        int[] counts = new int[alphabet.size()];
         for (String s : list)
-        {
-            if (s.contains((CharSequence) alphabet))
-            {
-                count++;
-                System.out.println(s);
-            }
-
-        }
-        System.out.print(count);
-
+            for (char c : s.toCharArray())
+                counts[alphabet.indexOf(c)]++;
+        for (int i = 0; i < alphabet.size(); i++)
+            System.out.println(alphabet.get(i) + " " + counts[i]);
     }
 
 }

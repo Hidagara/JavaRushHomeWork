@@ -24,8 +24,17 @@ public class Solution
         }
 
         //Напишите тут ваше решение
-
-        return new Pair<Integer, Integer>(0, 0);
+        int min = array[0];
+        int index = 0;
+        for (int i = 0; i < array.length - 1; i++)
+        {
+            if (array[i] < min)
+            {
+                min = array[i];
+                index = i;
+            }
+        }
+        return new Pair<Integer, Integer>(min, index);
     }
 
 

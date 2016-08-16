@@ -22,11 +22,19 @@ public class Solution
         {
             return new Pair<Integer, Integer>(null, null);
         }
+        int min = array[0];
+        int max = array[0];
 
+        for (int i = 0; i < array.length - 1; i++)
+        {
+            if (array[i] < min )
+                min = array[i];
+            if (array[i] > max)
+                max = array[i];
+        }
         //Напишите тут ваше решение
 
-
-        return new Pair<Integer, Integer>(0, 0);
+        return new Pair<Integer, Integer>(min, max);
     }
 
 
