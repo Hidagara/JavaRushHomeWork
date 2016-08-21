@@ -19,5 +19,9 @@ public class Solution
     }
 
     //add println method here
+    static void  println (Bridge bridge)
+    {
+        System.out.println(bridge.getCarsCount());
+    }
 }
 

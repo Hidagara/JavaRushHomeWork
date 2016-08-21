@@ -33,8 +33,81 @@ public class Solution
             exceptions.add(e);
         }
 
-        //Add your code here
+        try
+        {
+            float i = 1 / 0;
 
+        } catch (Exception e)
+        {
+            exceptions.add(e);
+        }
+        try
+        {
+            float i = 1 / 0;
+
+        } catch (Exception e)
+        {
+            exceptions.add(e);
+        }
+        try
+        {
+            float i = 1 / 0;
+
+        } catch (Exception e)
+        {
+            exceptions.add(e);
+        }
+        try
+        {
+            float i = 1 / 0;
+
+        } catch (Exception e)
+        {
+            exceptions.add(e);
+        }
+        try
+        {
+            float i = 1 / 0;
+
+        } catch (Exception e)
+        {
+            exceptions.add(e);
+        }
+        try
+        {
+            float i = 1 / 0;
+
+        } catch (Exception e)
+        {
+            exceptions.add(e);
+        }
+        try
+        {
+            float i = 1 / 0;
+
+        } catch (Exception e)
+        {
+            exceptions.add(e);
+        }
+        try
+        {
+            float i = 1 / 0;
+
+        } catch (Exception e)
+        {
+            exceptions.add(e);
+        }
+        try
+        {
+            float i = 1 / 0;
+
+        } catch (Exception e)
+        {
+            exceptions.add(e);
+        }
+
+
+        //Add your code here
 
     }
 }

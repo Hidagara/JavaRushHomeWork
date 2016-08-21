@@ -1,7 +1,5 @@
-/*
 package com.javarush.test.level13.lesson11.bonus03;
 
-*/
 /* Битва роботов
 1 Разобраться в том, что тут написано.
 2 http://info.javarush.ru/uploads/images/00/00/07/2014/08/12/50f3e37f94.png
@@ -16,8 +14,7 @@ package com.javarush.test.level13.lesson11.bonus03;
 6.4 Добавить новую часть тела в реализацию интерфейсов Attackable и Defensable (в классе AbstractRobot).
 
 7 http://info.javarush.ru/uploads/images/00/00/07/2014/08/12/3b9c65580b.png
-*//*
-
+*/
 
 public class Solution
 {
@@ -43,4 +40,3 @@ public class Solution
                 robotFirst.getName(), robotSecond.getName(), attacked, defenced));
     }
 }
-*/

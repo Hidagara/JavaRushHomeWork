@@ -25,16 +25,38 @@ public class Solution
     {
         BufferedReader reader = new BufferedReader(new InputStreamReader(System.in));
         Person person = null;
-        String key = null;
+        String key = reader.readLine();
 
         //тут цикл по чтению ключей, пункт 1
-        {
+        { while (key.equals("user") || key.equals("looser") || key.equals("coder") || key.equals("proger"))
+            {
+                if (key.equals("user"))
+                {
 
+                person = new Person.User();
+                    doWork(person);
+
+                }
+                if (key.equals("looser"))
+                {
+                    person = new Person.Looser();
+                    doWork(person);
+                }
+                if (key.equals("coder"))
+                {
+                    person = new Person.Coder();
+                    doWork(person);
+                }
+                if (key.equals("proger"))
+                {
+                    person = new Person.Proger();
+                    doWork(person);
+                }
+                key = reader.readLine();
+            }
         //создаем объект, пункт 2
 
-
-
-        doWork(person); //вызываем doWork
+       ; //вызываем doWork
 
         }
     }
@@ -42,6 +64,21 @@ public class Solution
     public static void doWork(Person person)
     {
         // пункт 3
-
+        if (person instanceof Person.User)
+        {
+            ((Person.User) person).live();
+        }
+        if (person instanceof Person.Looser)
+        {
+            ((Person.Looser) person).doNothing();
+        }
+        if (person instanceof Person.Coder)
+        {
+            ((Person.Coder) person).coding();
+        }
+        if (person instanceof Person.Proger)
+        {
+            ((Person.Proger) person).enjoy();
+        }
     }
 }

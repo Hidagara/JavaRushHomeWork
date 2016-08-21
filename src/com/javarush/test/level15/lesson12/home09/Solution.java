@@ -22,29 +22,9 @@ obj name
 double 3.14
 */
 
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
-import java.nio.Buffer;
-
 public class Solution {
-    public static void main(String[] args) throws IOException
-    {
+    public static void main(String[] args) {
         //add your code here
-
-        BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-
-        String uri = br.readLine();
-        int index = uri.indexOf("?");
-
-
-          for (int i = 0; i<uri.length(); i++)
-          {
-             while (uri.charAt(i)!='&')
-             {
-
-             }
-          }
     }
 
     public static void alert(double value) {
