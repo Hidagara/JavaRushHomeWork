@@ -22,9 +22,27 @@ obj name
 double 3.14
 */
 
+import java.util.Scanner;
+
 public class Solution {
     public static void main(String[] args) {
         //add your code here
+        Scanner scanner = new Scanner(System.in);
+        String uri = scanner.nextLine();
+
+        char[] chars = uri.toCharArray();
+        String par = "";
+
+        for (char ch : chars)
+        {
+            if (ch == '?')
+            {
+                while (ch != '&')
+                {
+                    par = par + ch;
+                }
+            }
+        }
     }
 
     public static void alert(double value) {
